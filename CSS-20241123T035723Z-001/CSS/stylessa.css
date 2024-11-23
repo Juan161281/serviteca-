@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif; /* define la letra que se está usando */
+    margin: 0; /* elimina el margen y el rellono predeterminado */
+    padding: 0; /* elemina el margen y el relleno predeterminado */
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxA8ZIt90k0XtphR287FmWhEfZYs4RsZnTg&s"); 
+    background-size: 50%;
+    background-repeat: repeat;
+}
+h2 {
+    color: rgb(252, 32, 32); /* Cambia el color del texto de los títulos h1 a azul */
+}
+a:hover {
+    color: orange; /* Cambia el color a naranja al pasar el mouse */
+}
+
+header {
+    background-color:black; /* cambia a negro */
+    color: rgb(241, 8, 8); /* cambia el color del texto a blanco */
+    padding: 10px 0; /* añade espacio en la parte superior e inferior del encabezado */
+    text-align: center; /* centra el texto dentro del encabezado */ 
+}
+
+nav ul {
+    list-style-type: none; /* elimina los puntos de viñeta en los elementos de lista */
+    padding: 0; /* quita el relleno predeterminado */
+}
+
+nav ul li {
+    display: inline; /* muestra los elementos de la lista en línea (horizontalmente) */
+    margin: 0 15px; /* aumenta el margen entre elementos */
+}
+
+nav ul li a {
+    color: white; /* cambia el color de los enlaces a blanco */ 
+    text-decoration: none; /* quita el subrayado predeterminado en los enlaces */
+}
+
+main {
+    padding: 20px; /*  añade espacio alrededor del contenido principal para mejorar su aparencia */
+}
+
+section {
+    margin-bottom: 20px; /* crea espacio debajo de cada sección */
+    padding: 15px; /* añade espacio interior en cada sección */
+    border: 1px solid #ccc; /* fondo blanco para las secciones */
+}
+
+footer {
+    text-align: center; /* centra el texto dentro del pie de página */ 
+    padding: 10px 0; /* añade espacio arriba y abajo del pie de página */ 
+    background-color: #f1f1f1; /* asigna un fondo blanco*/
+}
+
+.columnas {
+    display: flex; /* utiliza un diseño flexible para distribuir elementos en línea */ 
+    justify-content: space-between; /* coloca espacio equitativo entre columnas */
+    margin-top: 20px; /* añade espacio en la parte superior */
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+    padding: 15px;
+    border: 1px solid #ccc; /* cambia el borde a blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra más pronunciada */
+}
+
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
+.menuCSS3 ul {
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista en una fila */
+    padding: 0; /* Elimina el padding predeterminado de la lista */
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+.menuCSS3 a {
+    display: block;
+    padding: 1em 2em; /* Ajuste del padding */
+    background-color: #F9B53C;
+    text-decoration: none;
+    color: #191C26;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.menuCSS3 a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del elemento contenedor */
+    padding: 1em 2em; /* Ajuste del padding para proporcionar espacio alrededor del texto */
+    background-color: #3aca71; /* Color de fondo inicial del enlace */
+    text-decoration: none; /* Elimina el subrayado del texto del enlace */
+    color: #191C26; /* Color del texto del enlace */
+    transition: background-color 0.3s; /* Efecto de transición suave al cambiar el color de fondo */
+}
+
+.menuCSS3 a:hover {
+    background-color: #2134a0; /* Cambia el color de fondo cuando el mouse está sobre el enlace */
+}
+
+
+.menuCSS3 ul li {
+    position: relative; /* Necesario para posicionar correctamente el submenú */
+}
+.menuCSS3 ul li ul {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Permite que el submenú se posicione en relación al elemento padre */
+    top: 100%; /* Muestra el submenú justo debajo del elemento padre */
+    left: 0; /* Alinea el submenú a la izquierda del elemento padre */
+    padding: 0; /* Elimina el padding del submenú */
+    margin: 0; /* Elimina el margen del submenú */
+    list-style: none; /* Elimina los puntos de la lista en el submenú */
+    background-color: blueviolet;
+}
+
+.menuCSS3 a:hover {
+        background-color: #CC673B;
+    }
+    
+.menuCSS3 ul li {
+        position: relative; /* Necesario para el submenú */
+    }
+.menuCSS3 ul li:hover ul {
+        display: block; /* Muestra el submenú al pasar el mouse */
+    }
+    
+.menuCSS3 ul li ul li a {
+        padding: 1em; /* Ajusta el padding para los elementos del submenú */
+    }
+
+p{
+    background-color: #fff; /* Establece un color de fondo blanco, que es neutro y versátil, ideal para destacar otros elementos */
+        padding: 15px; /* Agrega un espacio interno de 15 píxeles alrededor del contenido, mejorando la legibilidad y el diseño general */
+        border-radius: 8px; /* Redondea las esquinas del elemento con un radio de 8 píxeles, proporcionando un aspecto más suave y moderno */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil debajo del elemento, creando una sensac*/
+}
